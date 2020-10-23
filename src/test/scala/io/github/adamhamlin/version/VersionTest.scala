@@ -1,8 +1,4 @@
-package org.adamhamlin.version
-
-import org.scalatest.BeforeAndAfterEach
-import org.scalatest.matchers.should.Matchers._
-import org.scalatest.funsuite.AnyFunSuite
+package io.github.adamhamlin.version
 
 class VersionTest extends AnyFunSuite with BeforeAndAfterEach {
 

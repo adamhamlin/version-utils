@@ -1,4 +1,4 @@
-package org.adamhamlin.version
+package io.github.adamhamlin.version
 
 import scala.util.control.Exception.allCatch
 
