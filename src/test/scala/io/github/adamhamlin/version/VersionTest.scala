@@ -1,5 +1,9 @@
 package io.github.adamhamlin.version
 
+import org.scalatest.BeforeAndAfterEach
+import org.scalatest.funsuite.AnyFunSuite
+import org.scalatest.matchers.should.Matchers._
+
 class VersionTest extends AnyFunSuite with BeforeAndAfterEach {
 
   test("Parse version strings") {
