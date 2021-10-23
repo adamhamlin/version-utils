@@ -69,7 +69,7 @@ mvn clean deploy -Prelease --settings /path/to/sonatypeSettings.xml
 ```
 You can immediately view the artifacts in the [staging repository](https://oss.sonatype.org/#nexus-search;quick~io.github.adamhamlin).
 
-The artifacts should be available on Maven Central within 10 minutes and searchable within 2 hours.
+The artifacts should be available on Maven Central within 30 minutes and searchable within 4 hours.
 
 ## Future Work
 - Option to limit or extend the number of version parts to be used.
