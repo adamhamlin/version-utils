@@ -1,6 +1,15 @@
 # VersionUtils
 Easily parse and compare version strings!
 
+```xml
+<!-- Available on Maven Central -->
+<dependency>
+    <groupId>io.github.adamhamlin</groupId>
+    <artifactId>version-utils</artifactId>
+    <version>0.0.1</version>
+</dependency>
+```
+
 ## Usage
 
 ```scala
