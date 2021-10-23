@@ -1,4 +1,4 @@
-# version-utils
+# VersionUtils
 Easily parse and compare version strings!
 
 ## Usage
@@ -48,6 +48,25 @@ You can also pattern match on strings to deconstruct `Version` objects:
 >Any missing/non-numeric version parts are defaulted to 0
 
 >The suffix is considered to be everything after the first hyphen or underscore
+
+## Development
+
+### Deploying to Sonatype
+In order to publish, you'll need the following:
+- A Sonatype account with privileged access for this groupId
+- A maven settings file configured with the `ossrh` server and your Sonatype credentials
+- A GPG key pair for signing the artifacts
+
+To do a dry-run, execute the following:
+```bash
+mvn clean install -Prelease --settings /path/to/sonatypeSettings.xml
+gpg --verify target/*.pom.asc
+# Verify the above command outputted a "Good signature..."
+```
+Once you're confident, you can actually publish to the nexus using
+```bash
+mvn clean deploy -Prelease --settings /path/to/sonatypeSettings.xml
+```
 
 ## Future Work
 - Option to limit or extend the number of version parts to be used.
